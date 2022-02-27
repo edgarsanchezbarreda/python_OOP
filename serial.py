@@ -12,6 +12,10 @@ class SerialGenerator:
         self.start = start
         self.count = 0
 
+    def __repr__(self):
+        """Displays attributes"""
+        print(f"<SerialGenerator start = {self.start}>")
+
     def generate(self):
         """A method that increments the counter variable by 1, and is added to the initial start parameter"""
         print(self.start + self.count)
